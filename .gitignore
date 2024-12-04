@@ -1,4 +1,4 @@
-input.txt
+input-*.txt
 **/out/**
 **/.idea/**
 *.iml
