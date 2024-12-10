@@ -27,8 +27,9 @@ class Calculation (private val potentialResult: Long, private val numbers: List<
                 result = operator.apply(result, nextNumber)
             }
             if (result == potentialResult) {
-                println("Found a solution: $combination")
                 return result
+            } else if (result > potentialResult) {
+                return 0
             }
         }
         return 0;
