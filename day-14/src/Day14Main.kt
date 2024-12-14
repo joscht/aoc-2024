@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val input = "input-14.txt"
+    val input = "sample.txt"
     val lines = object {}.javaClass.getResourceAsStream(input)?.bufferedReader()?.readLines()!!.toMutableList()
     val boardWidth = when (input) {
         "sample.txt" -> 11
